@@ -1,0 +1,6 @@
+- Koodin täydennyksen ehdotukset eivät olleet minulle erityisen hyödyllisiä, koska osasin tehdä tehtävän itse.
+- Copilotin selitys Pylint-varoituksesta piti paikkansa.
+- Agentti teki toimivan ratkaisun ja tarvittavat testit.
+- Testit eivät eronneet merkittävästi edellisen viikon testeistä. Myös tässä käytettiin stubia ja yksikkötestejä.
+- Pylint löysi aluksi joitakin tyylivirheitä ja varoituksia, mutta ne korjattiin.
+- En oppinut tällä kertaa erityisesti mitään uutta, koska olin käyttänyt tätä työkalua jo aikaisemmin.
