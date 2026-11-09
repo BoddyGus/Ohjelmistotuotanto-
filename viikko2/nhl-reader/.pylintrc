@@ -1,0 +1,19 @@
+[MASTER]
+ignore-paths=^src/tests/
+
+[MESSAGE CONTROL]
+disable=missing-module-docstring,
+        missing-function-docstring,
+        missing-class-docstring
+
+[FORMAT]
+max-line-length=100
+
+[REFACTORING]
+max-nested-blocks=2
+
+[DESIGN]
+max-nested-blocks=2
+max-statements=10
+max-args=4
+min-public-methods=1

@@ -8,7 +8,7 @@ class PlayerReader:
         self.url = url
 
     def get_players(self):
-        response = requests.get(self.url)
+        response = requests.get(self.url, timeout=10)
         response.raise_for_status()
 
         return [Player(player) for player in response.json()]

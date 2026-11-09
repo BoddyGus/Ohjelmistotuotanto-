@@ -1,10 +1,10 @@
 class Player:
-    def __init__(self, dict):
-        self.name = dict["name"]
-        self.team = dict["team"]
-        self.nationality = dict["nationality"]
-        self.goals = dict["goals"]
-        self.assists = dict["assists"]
+    def __init__(self, data):
+        self.name = data["name"]
+        self.team = data["team"]
+        self.nationality = data["nationality"]
+        self.goals = data["goals"]
+        self.assists = data["assists"]
 
     @property
     def points(self):
