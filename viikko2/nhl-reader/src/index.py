@@ -56,19 +56,18 @@ def main():
         default="2024-25",
     )
 
-    nationality = Prompt.ask(
-        "Nationality",
-        choices=NATIONALITIES,
-        default="FIN",
+    team = Prompt.ask(
+        "Team",
+        default="PHI",
     )
 
     url = f"https://studies.cs.helsinki.fi/nhlstats/{season}/players"
     reader = PlayerReader(url)
     stats = PlayerStats(reader)
-    players = stats.top_scorers_by_nationality(nationality)
+    players = stats.top_scorers_by_team(team)
 
     console.print(
-        create_player_table(players, season, nationality)
+        create_player_table(players, season, team)
     )
 
 

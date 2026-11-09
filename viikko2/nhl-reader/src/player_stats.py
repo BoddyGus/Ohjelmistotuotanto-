@@ -13,3 +13,15 @@ class PlayerStats:
             key=lambda player: player.points,
             reverse=True
         )
+
+    def top_scorers_by_team(self, team):
+        players = filter(
+            lambda player: player.team == team,
+            self.players
+        )
+
+        return sorted(
+            players,
+            key=lambda player: player.points,
+            reverse=True
+        )
