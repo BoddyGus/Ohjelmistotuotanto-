@@ -55,6 +55,11 @@ class UserService:
                 "Password must be at least 8 characters"
             )
 
+        if password.isalpha():
+            raise UserInputError(
+                "Password must not consist solely of letters"
+            )
+
         if password != password_confirmation:
             raise UserInputError("Passwords do not match")
 user_service = UserService()
